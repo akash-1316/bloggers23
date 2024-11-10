@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>Blogging Website|Home page|login(or)signup for blogging</title>
+</head>
+<style>
+.header
+{
+display: flex;
+justify-content:start;
+align-items: start;
+}
+.logo
+{
+display: flex;
+justify-content: start;
+align-items: start;
+position: relative;
+left: 35px;
+font-size: larger;
+font-weight: bold;
+color:blueviolet;
+}
+.box
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+   width: 10rem;
+    position: relative;
+    top: 25px;
+    left: 1200px;
+    border: 3px solid blueviolet;
+    background-color: blueviolet;
+    border-radius: 10px  ;
+}
+.signin
+{
+    width: 5.54rem;
+    padding: 0.15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: blueviolet;
+    font-size:medium;
+    font-weight: bold;
+    border-radius:  10px;
+}
+.signup
+{
+    width: 5.54rem;
+    margin-bottom: 0.16rem;
+    display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+background-color: blueviolet;
+border-radius: 10px 10px 10px;
+}
+a{
+    text-decoration: none;
+}
+.signup>a>label
+{
+    color: white;
+}
+.block2
+{
+   
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;   
+}
+.hamburger {
+    font-size: 30px;
+    cursor: pointer;
+    position: relative;
+    left: 200px;
+    z-index: 1000;
+}
+
+.sidebar {
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -250px; /* Hide the sidebar initially */
+    background-color: #333;
+    color: white;
+    transition: left 0.3s ease;
+    padding-top: 60px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 15px;
+    text-align: left;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar ul li:hover {
+    background-color: #575757;
+}
+.input-box {
+  width: 700px;
+  height: 40px;
+  padding: 5px;
+  text-align: center;
+  font-size: larger;
+  font-weight: 50;
+  font-family:cursive;
+  border: none;
+  outline:none ;
+}
+.searchbar
+{
+    border: 2px solid blueviolet;
+    box-shadow: 1px 1px 1px blueviolet ;
+    border-radius: 10px;
+    border-top-left-radius:5px ;
+    position: relative;
+  left: 300px;
+}
+.block3
+{
+    padding: 3rem;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    width: 75%;
+    left: 15%;
+    top: 20%;
+}
+.img
+{
+    width: 250px;
+    height: 350px;
+    padding-right: 45px;
+}
+.para
+{
+    width: 170px;
+}
+.img4
+{
+    height: 350px;
+    padding-right: 35px;
+}
+.para1
+{
+    width: 150px;
+}
+.business
+{
+    width: 500px;
+    height: 500px;
+   
+}
+.img2
+{
+    float: left;
+    width: 100px;
+   padding-bottom: 55px;
+}
+.para3
+{
+    width: 500px;
+padding-bottom: 100px;
+}
+.para4
+{
+    padding-bottom: 50px;
+
+}
+.img3
+{
+    float:inline-start;
+    float: left;
+    width: 22%;
+}
+.headline>h1
+{
+text-align: center;
+font-size: larger;
+font-weight: 700;
+}
+.headline>ul>li
+{
+  width: 170px; 
+  height: 110px;
+}
+.foot
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#25354b ;
+}
+.foot>div>h3
+{
+color: yellow;
+}
+.foot>div>p
+{
+color: white;
+}
+.foot>div>a
+{
+color: white;
+}
+</style>
+<body>
+  <section class="header">
+<div class="logo">
+<h1>LOGO</h1>
+</div>
+<div class="box">
+<div class="signin">
+    <a href=""><label for="">SIGN IN</label></a>
+    <ion-icon name="person-circle-outline"></ion-icon>
+</div>
+<div class="signup">
+   <a href=""> <label for="">SIGN UP</label></a>
+</div>
+</div>
+  </section>
+<section class="block2">
+    <div class="hamburger" id="hamburger">
+        &#9776; <!-- Hamburger icon -->
+    </div>
+    <nav class="sidebar" id="sidebar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+ <div class="searchbar">
+    <span>
+        <input type="text" class="input-box" placeholder="Fuel your curiosity-search and Discover">
+        <ion-icon name="search-sharp"></ion-icon>
+        <ion-icon name="mic-outline"></ion-icon>
+    </span>
+ </div>
+</section>
+<section class="block3">
+<div class="lifestyle">
+<img class="img" src="https://static.toiimg.com/thumb/112524493/112524493.jpg?height=746&width=420&resizemode=76&imgsize=137108" alt="">
+<a href=""><h4>LIFESTYLE</h4></a>
+<p class="para">My Goals for 2024 and a Renewed Commitment to Showing Up This Year </p>
+</div>
+<div class="cooking">
+<a href=""><h5>COOKING</h5></a>
+<p class="para1">Simple Recipes That Make You Feel Good</p>
+<img class="img4" src="https://mrbrownbakery.com/image/images/GJ7uCwGiteTF24HTWBclkziVTdhpQeZWH23MvQfq.jpeg?p=full" alt="">
+</div>
+<div class="business">
+<a href=""><h3>BUSINESS</h3></a>
+<img class="img2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmUNCV_iaIOT49UPn0uC7MxJbtJFpYj5zqow&s" alt="" align="left">
+<a href=""><h3>Target's Strech Jeans Sale,extra 20% off & More-The Thursday Mens's Sales</h3></a>
+<p class="para3">Loaded with shoes and boots this week.J.cr.Kentons spider cap-toes.And rare sale on Rhodes caliber chukkas</p>
+<img class="img3" src="https://img.tatacliq.com/images/i19//658Wx734H/MP000000023041639_658Wx734H_202407262022351.jpeg" alt=""><a href="">
+    <h3>Steal Alert:The Orient Bamb 38 sliver white dial is now $200</h3></a>
+    <p class="para4">Usually whipsawing between $215-$270 Orients new classically sized diver finally hits $199 at Amazon</p><br>
+</div>
+<div class="headline">
+    <h1>HEADLINES</h1>
+    <ul type="square">
+        <li> <a href="">Facing a tough battle in Kolhan, BJP banks on women, OBCs; JMM rides on tribal base</a></li>
+        <hr style="border:1px dotted black;">
+        <li><a href="">Sharad Pawar: 'Mahayuti schemes may have some impact... but people want change, MVA will get majority</a></li>
+        <hr style="border:1px dotted black;">
+        <li><a href="">Blast at Pakistan railway station kills 26; Baloch Liberation Army claims responsibility</a></li>
+    </ul>   
+</div>
+</section>
+<section class="foot">
+        <div>
+            <h3>Why Us</h3>
+            <p>We provide top-notch services tailored to your needs.</p>
+            <p>Our team is dedicated and experienced.</p>
+        </div>
+        <div>
+            <h3>Useful Links</h3>
+            <a href="about-us.html">About Us</a><br>
+            <a href="services.html">Services</a><br>
+            <a href="faq.html">FAQ</a><br>
+            <a href="blog.html">Blog</a><br>
+        </div>
+        <div>
+            <h3>Contact</h3>
+            <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
+            <p>Phone: <a href="tel:+1234567890">+1 234 567 890</a></p>
+            <p>Address: 123 Example St, City, Country</p>
+        </div>
+</section>
+</body>
+<script>
+document.getElementById('hamburger').addEventListener('click', function() {
+    const sidebar = document.getElementById('sidebar');
+    if (sidebar.style.left === '0px') {
+        sidebar.style.left = '-250px'; // Hide the sidebar
+    } else {
+        sidebar.style.left = '0px'; // Show the sidebar
+    }
+});
+
+</script>
+</html>
